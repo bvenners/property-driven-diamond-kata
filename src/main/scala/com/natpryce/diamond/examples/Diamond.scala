@@ -1,8 +1,8 @@
 package com.natpryce.diamond.examples
 
 object Diamond {
-  def diamond(maxLetter: Char) : String = {
-    val topHalf = for (letter <- 'A' to maxLetter) yield lineFor(maxLetter, letter)
+  def diamond(maxLetter: DiamondChar) : String = {
+    val topHalf = for (letter <- 'A' to maxLetter.value) yield lineFor(maxLetter.value, letter)
     (topHalf ++ topHalf.reverse.tail).mkString("\n")
   }
 
