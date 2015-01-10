@@ -48,7 +48,7 @@ class DiamondSpec extends UnitSpec {
     }
   }
 
-  "non-valid character literals fail to compile" in {
+  "non-valid character literals passed to DiamondChar fail to compile" in {
     assertTypeError("""DiamondChar('a')""")
     assertTypeError("""DiamondChar('b')""")
     assertTypeError("""DiamondChar('c')""")
