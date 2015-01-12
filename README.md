@@ -11,9 +11,15 @@ At the end of [Diamond Kata - TDD with only Property-Based Tests](http://natpryc
 
 The compile-time-assertions branch of this fork of Nat's project shows how the compile-time asserions of Scalactic 3.0 can help users create a macro that gives a compiler error for invalid `Char` literals. Here's a quick demo:
 
-    scala> import com.natpryce.diamond.examples._
+    $ sbt
+    > console
+    [info] Starting scala interpreter...
+    [info] 
     import com.natpryce.diamond.examples._
-    
+    Welcome to Scala version 2.11.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.6.0_65).
+    Type in expressions to have them evaluated.
+    Type :help for more information.
+
     scala> println(Diamond.diamond('C'))
       A  
      B B 
