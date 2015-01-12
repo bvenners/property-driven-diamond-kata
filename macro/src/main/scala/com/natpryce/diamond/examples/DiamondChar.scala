@@ -7,9 +7,9 @@ final class DiamondChar private (val value: Char) extends AnyVal {
 
 object DiamondChar {
   def from(value: Char): Option[DiamondChar] =
-    if (value % 2 == 1) Some(new DiamondChar(value)) else None
+    if (isValid(value)) Some(new DiamondChar(value)) else None
   import scala.language.experimental.macros
-  def apply(value: Char): DiamondChar = macro DiamondCharMacro.apply
+  implicit def apply(value: Char): DiamondChar = macro DiamondCharMacro.apply
   def isValid(c: Char): Boolean = c >= 'A' && c <= 'Z'
 }     
 

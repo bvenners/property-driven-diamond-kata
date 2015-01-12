@@ -127,6 +127,7 @@ class DiamondSpec extends UnitSpec {
   }
   
   def diamondLines(c : Char) = {
-    Diamond.diamond(c).lines.toVector
+    val diamondChar = DiamondChar.from(c).get
+    Diamond.diamond(diamondChar).lines.toVector
   }
 }
