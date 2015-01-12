@@ -1,11 +1,15 @@
 Compile-time assertions coming soon in Scalactic 3.0
 ====================================================
 
-At the end of [Diamond Kata - TDD with only Property-Based Tests](http://natpryce.com/articles/000807.html), Nat Pryce wrote:
+At the end of [Diamond Kata - TDD with only Property-Based Tests](http://natpryce.com/articles/000807.html), Nat Pryce writes:
 
-I also didn't address what the diamond function would do with input outside the range of 'A' to 'Z'. Scala doesn't let one define a subtype of `Char`, so I can't enforce the input constraint in the type system. I guess the Scala way would be to define diamond as a 'PartialFunction[Char,String]'.
+> I also didn't address what the diamond function would do with
+> input outside the range of `'A'` to `'Z'`. Scala doesn't let one
+> define a subtype of `Char`, so I can't enforce the input constraint
+> in the type system. I guess the Scala way would be to define
+> diamond as a 'PartialFunction[Char,String]'.
 
-The compile-time-assertions branch of this fork of Nat's project shows how Scalactic 3.0 will help users create a macro that gives a compiler error for a `Char` outside the range of `A` to `Z'. Here's a quick demo:
+The compile-time-assertions branch of this fork of Nat's project shows how the compile-time asserions of Scalactic 3.0 can help users create a macro that gives a compiler error for invalid `Char` literals. Here's a quick demo:
 
     scala> import com.natpryce.diamond.examples._
     import com.natpryce.diamond.examples._
