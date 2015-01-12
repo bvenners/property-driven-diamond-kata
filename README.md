@@ -7,7 +7,7 @@ At the end of [Diamond Kata - TDD with only Property-Based Tests](http://natpryc
 > input outside the range of `'A'` to `'Z'`. Scala doesn't let one
 > define a subtype of `Char`, so I can't enforce the input constraint
 > in the type system. I guess the Scala way would be to define
-> diamond as a 'PartialFunction[Char,String]'.
+> diamond as a `PartialFunction[Char,String]`.
 
 The compile-time-assertions branch of this fork of Nat's project shows how the compile-time asserions of Scalactic 3.0 can help users create a macro that gives a compiler error for invalid `Char` literals. Here's a quick demo:
 
