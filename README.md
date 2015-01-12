@@ -45,12 +45,14 @@ The compile-time-assertions branch of this fork of Nat's project shows how the c
            A       
     
     scala> println(Diamond.diamond('h'))
-    <console>:17: error: DiamondChar.apply can only be invoked on Char literals 'A' to 'Z', like DiamondChar('C').
+    <console>:17: error: DiamondChar.apply can only be invoked on Char literals 'A' to 'Z',
+        like DiamondChar('C').
                   println(Diamond.diamond('h'))
                                           ^
     
     scala> println(Diamond.diamond('*'))
-    <console>:17: error: DiamondChar.apply can only be invoked on Char literals 'A' to 'Z', like DiamondChar('C').
+    <console>:17: error: DiamondChar.apply can only be invoked on Char literals 'A' to 'Z',
+        like DiamondChar('C').
                   println(Diamond.diamond('*'))
                                           ^
     
